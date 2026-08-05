@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes wave1 {
+        0% { d: path("M 0 40 Q 225 10 450 40 T 900 40 L 900 180 L 0 180 Z"); }
+        50% { d: path("M 0 20 Q 225 50 450 20 T 900 30 L 900 180 L 0 180 Z"); }
+        100% { d: path("M 0 40 Q 225 10 450 40 T 900 40 L 900 180 L 0 180 Z"); }
+      }
+      @keyframes wave2 {
+        0% { d: path("M 0 50 Q 225 30 450 50 T 900 30 L 900 180 L 0 180 Z"); }
+        50% { d: path("M 0 30 Q 225 60 450 40 T 900 50 L 900 180 L 0 180 Z"); }
+        100% { d: path("M 0 50 Q 225 30 450 50 T 900 30 L 900 180 L 0 180 Z"); }
+      }
+      .w1 { animation: wave1 8s ease-in-out infinite; }
+      .w2 { animation: wave2 10s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="900" height="180" rx="16" fill="#0B0F19"/>
+
+  <!-- Animated Waves -->
+  <path class="w2" fill="url(#waveGrad2)" d="M 0 50 Q 225 30 450 50 T 900 30 L 900 180 L 0 180 Z"/>
+  <path class="w1" fill="url(#waveGrad1)" d="M 0 40 Q 225 10 450 40 T 900 40 L 900 180 L 0 180 Z"/>
+
+  <!-- Glass Overlay Card -->
+  <rect x="20" y="30" width="860" height="130" rx="12" fill="#0F172A" fill-opacity="0.7" stroke="url(#footerGradient)" stroke-width="1.5"/>
+
+  <!-- Content -->
+  <g transform="translate(450, 80)" text-anchor="middle">
+    <!-- Heart Icon & Crafted text -->
+    <text y="0" fill="#E2E8F0" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="1">
+      Designed &amp; Built with <tspan fill="#EF4444">💙</tspan> by <tspan fill="url(#footerGradient)" filter="url(#neonGlow)">Mahendra Naidu Meesala</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text y="30" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13" font-weight="500" letter-spacing="1.5">
+      ASPIRING SOFTWARE ENGINEER <tspan fill="#06B6D4">•</tspan> FULL STACK MERN DEVELOPER <tspan fill="#06B6D4">•</tspan> INDIA 🇮🇳
+    </text>
+
+    <!-- Bottom Line -->
+    <text y="54" fill="#64748B" font-family="monospace" font-size="11">
+      © 2026 Mahendra Naidu Meesala. All Rights Reserved.
+    </text>
+  </g>
+</svg>

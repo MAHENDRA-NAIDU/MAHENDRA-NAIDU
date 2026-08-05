@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="terminalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.8"/>
+    </linearGradient>
+    
+    <filter id="neonGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Text animation keyframes for multiple messages */
+      @keyframes type1 {
+        0%, 18% { opacity: 1; }
+        20%, 100% { opacity: 0; }
+      }
+      @keyframes type2 {
+        0%, 20% { opacity: 0; }
+        22%, 38% { opacity: 1; }
+        40%, 100% { opacity: 0; }
+      }
+      @keyframes type3 {
+        0%, 40% { opacity: 0; }
+        42%, 58% { opacity: 1; }
+        60%, 100% { opacity: 0; }
+      }
+      @keyframes type4 {
+        0%, 60% { opacity: 0; }
+        62%, 78% { opacity: 1; }
+        80%, 100% { opacity: 0; }
+      }
+      @keyframes type5 {
+        0%, 80% { opacity: 0; }
+        82%, 98% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      .cursor {
+        animation: blink 0.8s infinite;
+        fill: #06B6D4;
+      }
+
+      .txt-1 { animation: type1 15s infinite; }
+      .txt-2 { animation: type2 15s infinite; }
+      .txt-3 { animation: type3 15s infinite; }
+      .txt-4 { animation: type4 15s infinite; }
+      .txt-5 { animation: type5 15s infinite; }
+
+      .prompt { fill: #38BDF8; font-weight: 700; }
+      .code-text { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 20px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect width="850" height="120" rx="14" fill="#0B0F19"/>
+  <rect x="2" y="2" width="846" height="116" rx="12" fill="#0F172A" fill-opacity="0.9" stroke="url(#terminalBorder)" stroke-width="1.5"/>
+
+  <!-- Window Controls -->
+  <circle cx="25" cy="22" r="6" fill="#EF4444"/>
+  <circle cx="45" cy="22" r="6" fill="#F59E0B"/>
+  <circle cx="65" cy="22" r="6" fill="#10B981"/>
+  <text x="90" y="26" fill="#64748B" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">terminal@mahendra-naidu ~ zsh</text>
+
+  <!-- Divider line -->
+  <line x1="0" y1="40" x2="850" y2="40" stroke="#334155" stroke-opacity="0.5" stroke-width="1"/>
+
+  <!-- Terminal Typing Content -->
+  <g transform="translate(30, 80)">
+    <text class="prompt code-text" x="0" y="0">~$</text>
+    <text class="prompt code-text" x="35" y="0" fill="#A78BFA">focus --current</text>
+    <text class="code-text" x="210" y="0" fill="#94A3B8">></text>
+
+    <!-- Cycle of Animated Text Options -->
+    <g transform="translate(235, 0)">
+      <text class="txt-1 code-text" fill="#22D3EE" filter="url(#neonGlowCyan)">MERN Stack Developer 🚀</text>
+      <text class="txt-2 code-text" fill="#60A5FA" filter="url(#neonGlowCyan)">Backend &amp; API Architect ⚡</text>
+      <text class="txt-3 code-text" fill="#A78BFA" filter="url(#neonGlowCyan)">Data Structures &amp; Algorithms Learner 🧠</text>
+      <text class="txt-4 code-text" fill="#34D399" filter="url(#neonGlowCyan)">AI &amp; Machine Learning Enthusiast 🤖</text>
+      <text class="txt-5 code-text" fill="#F472B6" filter="url(#neonGlowCyan)">Open Source Learner 🌐</text>
+    </g>
+
+    <!-- Blinking Cursor -->
+    <rect class="cursor" x="650" y="-18" width="10" height="22" rx="2" filter="url(#neonGlowCyan)"/>
+  </g>
+</svg>

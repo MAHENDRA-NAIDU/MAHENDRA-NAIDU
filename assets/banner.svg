@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow1" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow2" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text & Stroke Gradients -->
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Animations -->
+    <style>
+      @keyframes floatParticle1 {
+        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+        50% { transform: translateY(-20px) translateX(15px); opacity: 0.9; }
+      }
+      @keyframes floatParticle2 {
+        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.4; }
+        50% { transform: translateY(-30px) translateX(-20px); opacity: 1; }
+      }
+      @keyframes waveFlow1 {
+        0% { d: path("M 0 250 Q 225 210 450 250 T 900 250 L 900 320 L 0 320 Z"); }
+        50% { d: path("M 0 240 Q 225 270 450 230 T 900 260 L 900 320 L 0 320 Z"); }
+        100% { d: path("M 0 250 Q 225 210 450 250 T 900 250 L 900 320 L 0 320 Z"); }
+      }
+      @keyframes waveFlow2 {
+        0% { d: path("M 0 270 Q 225 240 450 270 T 900 240 L 900 320 L 0 320 Z"); }
+        50% { d: path("M 0 250 Q 225 280 450 240 T 900 270 L 900 320 L 0 320 Z"); }
+        100% { d: path("M 0 270 Q 225 240 450 270 T 900 240 L 900 320 L 0 320 Z"); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.05); }
+      }
+      .p1 { animation: floatParticle1 6s ease-in-out infinite; }
+      .p2 { animation: floatParticle2 8s ease-in-out infinite; }
+      .p3 { animation: floatParticle1 7s ease-in-out infinite 2s; }
+      .p4 { animation: floatParticle2 9s ease-in-out infinite 1s; }
+      .wave1 { animation: waveFlow1 10s ease-in-out infinite; }
+      .wave2 { animation: waveFlow2 12s ease-in-out infinite; }
+      .pulse { transform-origin: center; animation: pulseGlow 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Main Card Container -->
+  <rect width="900" height="320" rx="20" fill="#0B0F19"/>
+  
+  <!-- Glowing Background Orbs -->
+  <rect width="900" height="320" rx="20" fill="url(#bgGlow1)" class="pulse"/>
+  <rect width="900" height="320" rx="20" fill="url(#bgGlow2)" class="pulse" style="animation-delay: 2s;"/>
+
+  <!-- Subtle Grid Pattern -->
+  <rect width="900" height="320" rx="20" fill="url(#grid)"/>
+
+  <!-- Glassmorphism Card Overlay -->
+  <rect x="15" y="15" width="870" height="290" rx="16" fill="#0F172A" fill-opacity="0.5" stroke="url(#borderGradient)" stroke-width="1.5"/>
+
+  <!-- Floating Particles -->
+  <circle cx="120" cy="80" r="3" fill="#60A5FA" class="p1" filter="url(#softGlow)"/>
+  <circle cx="280" cy="140" r="2.5" fill="#A78BFA" class="p2" filter="url(#softGlow)"/>
+  <circle cx="780" cy="90" r="4" fill="#22D3EE" class="p3" filter="url(#softGlow)"/>
+  <circle cx="650" cy="200" r="3" fill="#818CF8" class="p4" filter="url(#softGlow)"/>
+  <circle cx="420" cy="60" r="2" fill="#38BDF8" class="p1" filter="url(#softGlow)"/>
+  <circle cx="820" cy="220" r="3.5" fill="#C084FC" class="p2" filter="url(#softGlow)"/>
+  <circle cx="90" cy="220" r="2.5" fill="#34D399" class="p3" filter="url(#softGlow)"/>
+
+  <!-- Animated Waves Background -->
+  <path class="wave2" fill="#7C3AED" fill-opacity="0.12" d="M 0 270 Q 225 240 450 270 T 900 240 L 900 320 L 0 320 Z"/>
+  <path class="wave1" fill="url(#accentGradient)" fill-opacity="0.2" d="M 0 250 Q 225 210 450 250 T 900 250 L 900 320 L 0 320 Z"/>
+
+  <!-- Main Content Group -->
+  <g transform="translate(450, 140)" text-anchor="middle">
+    <!-- Top Pill Badge -->
+    <g transform="translate(0, -72)">
+      <rect x="-160" y="-15" width="320" height="30" rx="15" fill="#1E293B" fill-opacity="0.8" stroke="#3B82F6" stroke-opacity="0.5" stroke-width="1"/>
+      <circle cx="-135" cy="0" r="4" fill="#10B981" filter="url(#softGlow)"/>
+      <text x="-120" y="4" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1">
+        WELCOME TO MY DEV PROFILE
+      </text>
+    </g>
+
+    <!-- Main Title: MAHENDRA NAIDU MEESALA -->
+    <text y="0" fill="url(#titleGradient)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="2" filter="url(#neonGlow)">
+      MAHENDRA NAIDU MEESALA
+    </text>
+
+    <!-- Subtitle -->
+    <text y="36" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="3">
+      FULL STACK MERN DEVELOPER <tspan fill="#06B6D4">•</tspan> AI ENTHUSIAST
+    </text>
+
+    <!-- Sub-subtitle / Badges line -->
+    <g transform="translate(0, 75)">
+      <!-- Pill 1: B.Tech CSE -->
+      <rect x="-240" y="-14" width="130" height="28" rx="8" fill="#1E1B4B" fill-opacity="0.7" stroke="#6366F1" stroke-width="1"/>
+      <text x="-175" y="4" fill="#C7D2FE" font-family="sans-serif" font-size="12" font-weight="600">🎓 B.Tech CSE</text>
+
+      <!-- Pill 2: Software Engineer Goal -->
+      <rect x="-95" y="-14" width="190" height="28" rx="8" fill="#064E3B" fill-opacity="0.6" stroke="#10B981" stroke-width="1"/>
+      <text x="0" y="4" fill="#A7F3D0" font-family="sans-serif" font-size="12" font-weight="600">🎯 Aspiring Software Engineer</text>
+
+      <!-- Pill 3: Location India -->
+      <rect x="110" y="-14" width="130" height="28" rx="8" fill="#1E293B" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1"/>
+      <text x="175" y="4" fill="#BAE6FD" font-family="sans-serif" font-size="12" font-weight="600">🇮🇳 India</text>
+    </g>
+  </g>
+</svg>
