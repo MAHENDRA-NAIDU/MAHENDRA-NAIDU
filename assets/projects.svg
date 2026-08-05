@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 440" width="100%" height="100%">
+  <defs>
+    <radialGradient id="projGlow1" cx="20%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="projGlow2" cx="80%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="neonBorder1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="neonBorder2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="440" rx="16" fill="#0B0F19"/>
+  <rect width="850" height="440" rx="16" fill="url(#projGlow1)"/>
+  <rect width="850" height="440" rx="16" fill="url(#projGlow2)"/>
+  <rect width="850" height="440" rx="16" fill="url(#grid)"/>
+
+  <!-- PROJECT CARD 1: AI Farmer Assistant -->
+  <g transform="translate(20, 20)">
+    <rect width="395" height="185" rx="12" fill="#0F172A" fill-opacity="0.8" stroke="url(#neonBorder1)" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#38BDF8" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">🌾 AI Farmer Assistant</text>
+    <text x="20" y="58" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">Smart agriculture platform using MERN &amp; AI for soil</text>
+    <text x="20" y="76" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">analysis, crop yield prediction &amp; disease diagnosis.</text>
+    
+    <!-- Tech Badges -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="-12" width="60" height="22" rx="4" fill="#1E293B" stroke="#61DAFB" stroke-width="1"/>
+      <text x="30" y="3" fill="#61DAFB" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">React</text>
+
+      <rect x="68" y="-12" width="70" height="22" rx="4" fill="#1E293B" stroke="#10B981" stroke-width="1"/>
+      <text x="103" y="3" fill="#34D399" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Node.js</text>
+
+      <rect x="146" y="-12" width="75" height="22" rx="4" fill="#1E293B" stroke="#47A248" stroke-width="1"/>
+      <text x="183" y="3" fill="#47A248" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">MongoDB</text>
+
+      <rect x="229" y="-12" width="80" height="22" rx="4" fill="#1E293B" stroke="#3776AB" stroke-width="1"/>
+      <text x="269" y="3" fill="#38BDF8" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Python AI</text>
+    </g>
+  </g>
+
+  <!-- PROJECT CARD 2: Modern 3D Portfolio Website -->
+  <g transform="translate(435, 20)">
+    <rect width="395" height="185" rx="12" fill="#0F172A" fill-opacity="0.8" stroke="url(#neonBorder2)" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#C084FC" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">✨ 3D Portfolio Website</text>
+    <text x="20" y="58" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">High-performance responsive personal portfolio featuring</text>
+    <text x="20" y="76" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">glassmorphism, interactive SVGs &amp; dark theme UI.</text>
+    
+    <!-- Tech Badges -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="-12" width="60" height="22" rx="4" fill="#1E293B" stroke="#61DAFB" stroke-width="1"/>
+      <text x="30" y="3" fill="#61DAFB" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">React</text>
+
+      <rect x="68" y="-12" width="90" height="22" rx="4" fill="#1E293B" stroke="#06B6D4" stroke-width="1"/>
+      <text x="113" y="3" fill="#22D3EE" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">TailwindCSS</text>
+
+      <rect x="166" y="-12" width="105" height="22" rx="4" fill="#1E293B" stroke="#F472B6" stroke-width="1"/>
+      <text x="218" y="3" fill="#F472B6" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Framer Motion</text>
+    </g>
+  </g>
+
+  <!-- PROJECT CARD 3: MERN E-Commerce SaaS Application -->
+  <g transform="translate(20, 225)">
+    <rect width="395" height="195" rx="12" fill="#0F172A" fill-opacity="0.8" stroke="url(#neonBorder2)" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#F472B6" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">🛒 MERN E-Commerce SaaS</text>
+    <text x="20" y="58" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">Full-stack e-commerce engine with JWT authentication,</text>
+    <text x="20" y="76" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">Stripe payment gateway &amp; admin analytics dashboard.</text>
+    
+    <!-- Tech Badges -->
+    <g transform="translate(20, 140)">
+      <rect x="0" y="-12" width="75" height="22" rx="4" fill="#1E293B" stroke="#A78BFA" stroke-width="1"/>
+      <text x="37" y="3" fill="#A78BFA" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Express.js</text>
+
+      <rect x="83" y="-12" width="60" height="22" rx="4" fill="#1E293B" stroke="#61DAFB" stroke-width="1"/>
+      <text x="113" y="3" fill="#61DAFB" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">React</text>
+
+      <rect x="151" y="-12" width="65" height="22" rx="4" fill="#1E293B" stroke="#764ABC" stroke-width="1"/>
+      <text x="183" y="3" fill="#C084FC" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Redux</text>
+    </g>
+  </g>
+
+  <!-- PROJECT CARD 4: DSA Solutions Repository -->
+  <g transform="translate(435, 225)">
+    <rect width="395" height="195" rx="12" fill="#0F172A" fill-opacity="0.8" stroke="url(#neonBorder1)" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#34D399" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">🧠 DSA Solutions Repository</text>
+    <text x="20" y="58" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">Optimized Data Structures &amp; Algorithms solutions</text>
+    <text x="20" y="76" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">solved across LeetCode &amp; GeeksforGeeks in C++ &amp; Java.</text>
+    
+    <!-- Tech Badges -->
+    <g transform="translate(20, 140)">
+      <rect x="0" y="-12" width="55" height="22" rx="4" fill="#1E293B" stroke="#ED8B00" stroke-width="1"/>
+      <text x="27" y="3" fill="#FBBF24" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Java</text>
+
+      <rect x="63" y="-12" width="55" height="22" rx="4" fill="#1E293B" stroke="#00599C" stroke-width="1"/>
+      <text x="90" y="3" fill="#38BDF8" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">C++</text>
+
+      <rect x="126" y="-12" width="85" height="22" rx="4" fill="#1E293B" stroke="#F7DF1E" stroke-width="1"/>
+      <text x="168" y="3" fill="#FDE047" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">JavaScript</text>
+    </g>
+  </g>
+</svg>

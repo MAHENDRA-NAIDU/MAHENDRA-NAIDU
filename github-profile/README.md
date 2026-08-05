@@ -5,8 +5,8 @@
 
   <br/><br/>
 
-  <!-- 2. ANIMATED TYPING EFFECT -->
-  <img src="assets/hero.svg" alt="Typing Effect Terminal" width="100%" />
+  <!-- 2. ANIMATED TYPING TERMINAL -->
+  <img src="assets/hero.svg" alt="Typing Terminal" width="100%" />
 
   <br/><br/>
 
@@ -19,7 +19,7 @@
 
   <br/>
 
-  <!-- 5. SOCIAL BUTTONS -->
+  <!-- SOCIAL BUTTONS -->
   <p align="center">
     <a href="https://linkedin.com" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -39,9 +39,6 @@
     <a href="https://instagram.com" target="_blank">
       <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
     </a>
-    <a href="https://mahendranaidu.dev" target="_blank">
-      <img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=vlc&logoColor=white" alt="Portfolio" />
-    </a>
   </p>
 
   <br/>
@@ -52,7 +49,7 @@
 
 </div>
 
-<!-- 3. ABOUT ME CODE BLOCK & WORKSPACE ILLUSTRATION -->
+<!-- ABOUT ME CODE BLOCK & WORKSPACE ILLUSTRATION -->
 <table>
   <tr>
     <td width="50%" valign="top">
@@ -64,24 +61,23 @@ const mahendra = {
     location: "India 🇮🇳",
     education: "B.Tech CSE",
     learning: [
-        "MERN",
-        "Node.js",
-        "React",
-        "MongoDB",
-        "Express",
-        "DSA"
+        "MERN Stack",
+        "Node.js & Express",
+        "React & Redux",
+        "MongoDB & MySQL",
+        "Data Structures & Algorithms"
     ],
     interests: [
-        "AI",
-        "Backend",
-        "Open Source"
+        "Artificial Intelligence",
+        "Backend Architecture",
+        "Open Source Contribution"
     ],
     goal: "Software Engineer"
 };
 ```
     </td>
     <td width="50%" valign="center" align="center">
-      <!-- 4. PROFESSIONAL WORKSPACE ILLUSTRATION -->
+      <!-- PROFESSIONAL WORKSPACE ILLUSTRATION -->
       <img src="assets/coding.svg" alt="Developer Workspace" width="100%" />
     </td>
   </tr>
@@ -93,8 +89,8 @@ const mahendra = {
   <img src="assets/divider.svg" alt="Section Divider" width="100%" />
   <br/><br/>
 
-  <!-- 6. TECH STACK BADGES CATEGORIZED -->
-  <h2>⚡ Tech Stack & Tools</h2>
+  <!-- TECH STACK & TOOLS -->
+  <h2>⚡ Tech Stack &amp; Tools</h2>
   <br/>
 
   <table width="100%">
@@ -133,7 +129,7 @@ const mahendra = {
       </td>
     </tr>
     <tr>
-      <td align="center" width="20%"><b>Tools & DevOps</b></td>
+      <td align="center" width="20%"><b>Tools &amp; DevOps</b></td>
       <td align="left">
         <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
         <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
@@ -148,112 +144,25 @@ const mahendra = {
   <img src="assets/divider.svg" alt="Section Divider" width="100%" />
   <br/><br/>
 
-  <!-- 13. FEATURED PROJECTS CARDS -->
+  <!-- FEATURED PROJECTS SHOWCASE (HIGH-TECH SVG CARD) -->
   <h2>🚀 Featured Projects</h2>
   <br/>
 
-  <table width="100%">
-    <tr>
-      <td width="50%" valign="top">
-        <a href="https://github.com/MAHENDRA-NAIDU/ai-farmer-assistant">
-          <h3 align="left">🌾 AI Farmer Assistant</h3>
-        </a>
-        <p align="left">Smart agriculture platform built with MERN stack & AI models for soil analysis, crop yield prediction, and plant disease diagnosis.</p>
-        <p align="left">
-          <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-          <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-          <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
-          <img src="https://img.shields.io/badge/Python_AI-3776AB?style=flat-square&logo=python&logoColor=white" />
-        </p>
-      </td>
-      <td width="50%" valign="top">
-        <a href="https://github.com/MAHENDRA-NAIDU/animated-portfolio">
-          <h3 align="left">✨ Modern 3D Portfolio Website</h3>
-        </a>
-        <p align="left">High-performance responsive personal portfolio website with smooth glassmorphism, interactive SVGs, and dark theme UI.</p>
-        <p align="left">
-          <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-          <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
-          <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" />
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <a href="https://github.com/MAHENDRA-NAIDU/mern-ecommerce-saas">
-          <h3 align="left">🛒 MERN E-Commerce SaaS Application</h3>
-        </a>
-        <p align="left">Full-stack e-commerce engine complete with JWT authentication, Stripe payment processing, admin analytics dashboard, and real-time inventory management.</p>
-        <p align="left">
-          <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />
-          <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-          <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white" />
-        </p>
-      </td>
-      <td width="50%" valign="top">
-        <a href="https://github.com/MAHENDRA-NAIDU/dsa-problem-solving">
-          <h3 align="left">🧠 DSA & Algorithm Solutions Repository</h3>
-        </a>
-        <p align="left">Comprehensive collection of optimized Data Structures and Algorithms solutions solved across LeetCode & GeeksforGeeks in C++, Java, and JavaScript.</p>
-        <p align="left">
-          <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-          <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" width="100%" valign="top">
-        <a href="https://github.com/MAHENDRA-NAIDU/ai-agent-copilot">
-          <h3 align="center">🤖 Future Autonomous AI Agent System</h3>
-        </a>
-        <p align="center">Next-generation LLM-powered AI agent assistant designed for developer workflow automation, real-time code synthesis, and multi-agent coordination.</p>
-        <p align="center">
-          <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-          <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-          <img src="https://img.shields.io/badge/LangChain-121212?style=flat-square&logo=chainlink&logoColor=white" />
-        </p>
-      </td>
-    </tr>
-  </table>
+  <img src="assets/projects.svg" alt="Featured Projects Showcase" width="100%" />
 
   <br/><br/>
   <img src="assets/divider.svg" alt="Section Divider" width="100%" />
   <br/><br/>
 
-  <!-- 9. TROPHY SECTION -->
-  <h2>🏆 GitHub Trophies</h2>
-  <br/>
-  <img src="https://github-profile-trophy.vercel.app/?username=MAHENDRA-NAIDU&theme=darkhub&no-frame=true&no-background=true&margin-w=15&row=1" alt="GitHub Trophies" />
-
-  <br/><br/>
-  <img src="assets/divider.svg" alt="Section Divider" width="100%" />
-  <br/><br/>
-
-  <!-- 7. GITHUB STATISTICS & TOP LANGUAGES -->
-  <h2>📊 GitHub Statistics</h2>
+  <!-- DEVELOPER STATISTICS & METRICS (NATIVE RELIABLE SVG GRAPHIC) -->
+  <h2>📊 GitHub Statistics &amp; Metrics</h2>
   <br/>
 
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=MAHENDRA-NAIDU&show_icons=true&theme=dark&bg_color=0D1117&title_color=2563EB&icon_color=06B6D4&text_color=E2E8F0&border_color=2563EB&hide_border=false" alt="Mahendra Naidu GitHub Stats" height="170" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MAHENDRA-NAIDU&layout=compact&theme=dark&bg_color=0D1117&title_color=7C3AED&text_color=E2E8F0&border_color=7C3AED&hide_border=false" alt="Top Languages" height="170" />
-  </p>
-
-  <!-- STREAK STATS -->
-  <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=MAHENDRA-NAIDU&theme=dark&background=0D1117&border=06B6D4&stroke=06B6D4&ring=2563EB&fire=7C3AED&currStreakLabel=2563EB" alt="GitHub Streak Stats" />
-  </p>
-
-  <br/>
-
-  <!-- 10. ACTIVITY GRAPH -->
-  <h2>📈 Activity Graph</h2>
-  <br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MAHENDRA-NAIDU&theme=react-dark&bg_color=0B0F19&color=2563EB&line=06B6D4&point=7C3AED&area=true&hide_border=true" alt="Activity Graph" width="100%" />
+  <img src="assets/stats.svg" alt="Developer Statistics Dashboard" width="100%" />
 
   <br/><br/>
 
-  <!-- 8. SNAKE ANIMATION SECTION -->
+  <!-- SNAKE ANIMATION SECTION -->
   <h2>🐍 Contribution Snake Graph</h2>
   <br/>
   <picture>
@@ -266,16 +175,7 @@ const mahendra = {
   <img src="assets/divider.svg" alt="Section Divider" width="100%" />
   <br/><br/>
 
-  <!-- 11. QUOTE SECTION -->
-  <h2>💭 Daily Dev Quote</h2>
-  <br/>
-  <a href="https://github.com/MAHENDRA-NAIDU">
-    <img src="https://readme-quotes-three.vercel.app/api?theme=dark&bg_color=0D1117&title_color=2563EB&text_color=E2E8F0&border_color=7C3AED" alt="Programming Quote" />
-  </a>
-
-  <br/><br/>
-
-  <!-- 14. FOOTER -->
+  <!-- FOOTER -->
   <img src="assets/footer.svg" alt="Footer Graphic" width="100%" />
 
 </div>
