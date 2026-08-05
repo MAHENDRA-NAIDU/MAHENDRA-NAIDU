@@ -15,67 +15,61 @@
     </filter>
 
     <style>
-      @keyframes blink {
+      @keyframes blinkCursor {
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
       }
 
-      @keyframes typeRole1 {
-        0%, 28% { opacity: 1; }
-        32%, 100% { opacity: 0; }
+      @keyframes showRole1 {
+        0%, 30% { opacity: 1; visibility: visible; }
+        32%, 100% { opacity: 0; visibility: hidden; }
       }
-      @keyframes typeRole2 {
-        0%, 30% { opacity: 0; }
-        33%, 61% { opacity: 1; }
-        64%, 100% { opacity: 0; }
+      @keyframes showRole2 {
+        0%, 32% { opacity: 0; visibility: hidden; }
+        34%, 64% { opacity: 1; visibility: visible; }
+        66%, 100% { opacity: 0; visibility: hidden; }
       }
-      @keyframes typeRole3 {
-        0%, 63% { opacity: 0; }
-        66%, 95% { opacity: 1; }
-        98%, 100% { opacity: 0; }
+      @keyframes showRole3 {
+        0%, 66% { opacity: 0; visibility: hidden; }
+        68%, 98% { opacity: 1; visibility: visible; }
+        100% { opacity: 0; visibility: hidden; }
       }
 
       .cursor {
-        animation: blink 0.8s infinite;
+        animation: blinkCursor 0.8s infinite;
         fill: #06B6D4;
       }
 
-      .role-1 { animation: typeRole1 12s infinite; }
-      .role-2 { animation: typeRole2 12s infinite; }
-      .role-3 { animation: typeRole3 12s infinite; }
+      .role1 { animation: showRole1 12s infinite; }
+      .role2 { animation: showRole2 12s infinite; }
+      .role3 { animation: showRole3 12s infinite; }
 
       .prompt { fill: #38BDF8; font-weight: 700; }
-      .code-text { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 22px; font-weight: 700; }
+      .code-text { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 21px; font-weight: 700; }
     </style>
   </defs>
 
-  <!-- Terminal Window Background -->
   <rect width="850" height="120" rx="14" fill="#0B0F19"/>
-  <rect x="2" y="2" width="846" height="116" rx="12" fill="#0F172A" fill-opacity="0.9" stroke="url(#terminalBorder)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="846" height="116" rx="12" fill="#0F172A" fill-opacity="0.95" stroke="url(#terminalBorder)" stroke-width="1.5"/>
 
-  <!-- Window Controls -->
   <circle cx="25" cy="22" r="6" fill="#EF4444"/>
   <circle cx="45" cy="22" r="6" fill="#F59E0B"/>
   <circle cx="65" cy="22" r="6" fill="#10B981"/>
   <text x="90" y="26" fill="#64748B" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">mahendra-naidu ~ zsh</text>
 
-  <!-- Divider line -->
   <line x1="0" y1="40" x2="850" y2="40" stroke="#334155" stroke-opacity="0.5" stroke-width="1"/>
 
-  <!-- Terminal Typing Content -->
   <g transform="translate(30, 80)">
     <text class="prompt code-text" x="0" y="0">~$</text>
     <text class="prompt code-text" x="35" y="0" fill="#A78BFA">whoami</text>
     <text class="code-text" x="140" y="0" fill="#94A3B8">></text>
 
-    <!-- Cycle of Animated Text Roles -->
     <g transform="translate(165, 0)">
-      <text class="role-1 code-text" fill="#22D3EE" filter="url(#neonGlowCyan)">Full Stack MERN Developer 🚀</text>
-      <text class="role-2 code-text" fill="#F472B6" filter="url(#neonGlowCyan)">Editor 🎬</text>
-      <text class="role-3 code-text" fill="#FBBF24" filter="url(#neonGlowCyan)">Student (B.Tech CSE) 🎓</text>
+      <text class="role1 code-text" fill="#22D3EE" filter="url(#neonGlowCyan)">Full Stack MERN Developer 🚀</text>
+      <text class="role2 code-text" fill="#F472B6" filter="url(#neonGlowCyan)">Editor 🎬</text>
+      <text class="role3 code-text" fill="#FBBF24" filter="url(#neonGlowCyan)">Student (B.Tech CSE) 🎓</text>
     </g>
 
-    <!-- Blinking Cursor -->
     <rect class="cursor" x="590" y="-18" width="10" height="24" rx="2" filter="url(#neonGlowCyan)"/>
   </g>
 </svg>

@@ -10,29 +10,25 @@
 
   <br/><br/>
 
-  <!-- CLICKABLE SOCIAL MEDIA BADGES -->
+  <!-- EXACT CLICKABLE SOCIAL MEDIA BADGES -->
   <p align="center">
-    <a href="https://www.linkedin.com/in/mahendra-naidu-meesala" target="_blank">
+    <a href="https://www.linkedin.com/in/meesala-mahendra-naidu-775550320/" target="_blank">
       <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     &nbsp;
-    <a href="https://www.instagram.com/mahendra_naidu" target="_blank">
+    <a href="https://www.instagram.com/itx__mahi.x/" target="_blank">
       <img src="https://img.shields.io/badge/INSTAGRAM-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
     </a>
     &nbsp;
-    <a href="https://www.youtube.com/@mahendra-naidu" target="_blank">
-      <img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
-    </a>
-    &nbsp;
-    <a href="mailto:mahendra.meesala@example.com" target="_blank">
+    <a href="mailto:mahendranaidumeesala@gmail.com" target="_blank">
       <img src="https://img.shields.io/badge/GMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
     </a>
     &nbsp;
-    <a href="https://leetcode.com/u/MAHENDRA-NAIDU" target="_blank">
+    <a href="https://leetcode.com/u/Mahendra_LeetX/" target="_blank">
       <img src="https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
     </a>
     &nbsp;
-    <a href="https://www.geeksforgeeks.org/user/MAHENDRA-NAIDU" target="_blank">
+    <a href="https://www.geeksforgeeks.org/profile/24kd105m6" target="_blank">
       <img src="https://img.shields.io/badge/GEEKSFORGEEKS-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks" />
     </a>
   </p>
@@ -77,7 +73,7 @@ const mahendra = {
 
 </td>
 <td width="45%" valign="center" align="center">
-  <!-- ANIMATED VECTOR ILLUSTRATION -->
+  <!-- PROFESSIONAL GLASS IDE ILLUSTRATION -->
   <img src="assets/coding.svg" alt="Developer Workspace Illustration" width="100%" />
 </td>
 </tr>
