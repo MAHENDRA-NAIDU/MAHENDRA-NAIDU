@@ -51,10 +51,10 @@
 <!-- ABOUT ME SECTION -->
 <h2 align="left">📊 About Me</h2>
 
-<table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="55%" valign="top">
-      
+
 ```javascript
 const mahendra = {
     pronouns: "He/Him",
@@ -75,8 +75,10 @@ const mahendra = {
     }
 };
 ```
+
     </td>
     <td width="45%" valign="center" align="center">
+      <!-- ANIMATED VECTOR ILLUSTRATION -->
       <img src="assets/coding.svg" alt="Developer Workspace Illustration" width="100%" />
     </td>
   </tr>
@@ -93,7 +95,7 @@ const mahendra = {
   <h2>&lt;/&gt; Tech Arsenal</h2>
   <br/>
 
-  <table width="100%">
+  <table width="100%" border="0" cellspacing="10" cellpadding="10">
     <tr>
       <!-- LEFT COLUMN -->
       <td width="50%" valign="top">
@@ -102,7 +104,7 @@ const mahendra = {
           <img src="https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
           <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
           <img src="https://img.shields.io/badge/TAILWINDCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-          <br/>
+          <br/><br/>
           <img src="https://img.shields.io/badge/BOOTSTRAP-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
           <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
           <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
@@ -120,29 +122,39 @@ const mahendra = {
 
       <!-- RIGHT COLUMN -->
       <td width="50%" valign="top">
-        <h4 align="left">🗄️ Database &amp; Cloud</h4>
+        <h4 align="left">🗄️ Database</h4>
         <p align="left">
           <img src="https://img.shields.io/badge/MYSQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
           <img src="https://img.shields.io/badge/MONGODB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-          <br/>
-          <img src="https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-          <img src="https://img.shields.io/badge/POSTMAN-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
         </p>
 
         <br/>
 
         <h4 align="left">💻 Languages &amp; Tools</h4>
         <p align="left">
-          <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+          <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
           <img src="https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-          <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-          <br/>
+          <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+          <br/><br/>
           <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
           <img src="https://img.shields.io/badge/VS_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
         </p>
       </td>
     </tr>
   </table>
+
+  <br/><br/>
+
+  <!-- RED GRADIENT DIVIDER LINE -->
+  <img src="assets/divider.svg" alt="Divider" width="100%" />
+
+  <br/><br/>
+
+  <!-- FEATURED PROJECTS SHOWCASE -->
+  <h2>🚀 Featured Projects</h2>
+  <br/>
+
+  <img src="assets/projects.svg" alt="Featured Projects Showcase" width="100%" />
 
   <br/><br/>
 

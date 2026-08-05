@@ -1,51 +1,96 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
-  <!-- Background Shadow -->
-  <ellipse cx="250" cy="270" rx="200" ry="12" fill="#E2E8F0" fill-opacity="0.6"/>
+  <defs>
+    <style>
+      @keyframes codeScroll1 {
+        0% { transform: translateY(0px); opacity: 1; }
+        50% { transform: translateY(-8px); opacity: 0.5; }
+        100% { transform: translateY(0px); opacity: 1; }
+      }
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes gearSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px); opacity: 0.3; }
+        50% { transform: translateY(-12px); opacity: 0.9; }
+      }
 
-  <!-- Waste Bin (Right) -->
+      .code-line-1 { animation: codeScroll1 4s ease-in-out infinite; }
+      .code-line-2 { animation: codeScroll1 5s ease-in-out infinite 1s; }
+      .cursor-blink { animation: blinkCursor 0.8s infinite; }
+      .gear-rotate { transform-origin: 310px 95px; animation: gearSpin 12s linear infinite; }
+      .part1 { animation: floatParticle 3s ease-in-out infinite; }
+      .part2 { animation: floatParticle 4.5s ease-in-out infinite 1.5s; }
+    </style>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="250" cy="275" rx="210" ry="12" fill="#E2E8F0" fill-opacity="0.6"/>
+
+  <circle cx="50" cy="80" r="3" fill="#3B82F6" class="part1"/>
+  <circle cx="120" cy="40" r="2.5" fill="#8B5CF6" class="part2"/>
+  <circle cx="430" cy="60" r="3.5" fill="#06B6D4" class="part1"/>
+  <circle cx="460" cy="140" r="2" fill="#3B82F6" class="part2"/>
+
   <g transform="translate(420, 220)">
     <rect x="0" y="0" width="28" height="36" rx="4" fill="#3B82F6" fill-opacity="0.8" stroke="#1D4ED8" stroke-width="1.5"/>
-    <line x1="6" y1="0" x2="6" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
+    <line x1="7" y1="0" x2="7" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
     <line x1="14" y1="0" x2="14" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
-    <line x1="22" y1="0" x2="22" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
+    <line x1="21" y1="0" x2="21" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
   </g>
 
-  <!-- Desk Structure -->
-  <line x1="30" y1="170" x2="380" y2="170" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <line x1="30" y1="170" x2="380" y2="170" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
   <line x1="50" y1="170" x2="50" y2="270" stroke="#64748B" stroke-width="3"/>
   <line x1="200" y1="170" x2="200" y2="270" stroke="#64748B" stroke-width="3"/>
   <line x1="360" y1="170" x2="360" y2="270" stroke="#64748B" stroke-width="3"/>
 
-  <!-- Left Monitor 1 -->
   <g transform="translate(60, 110)">
-    <rect x="0" y="0" width="85" height="55" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2"/>
-    <rect x="4" y="4" width="77" height="47" rx="2" fill="#38BDF8" fill-opacity="0.9"/>
-    <line x1="10" y1="12" x2="45" y2="12" stroke="#FFFFFF" stroke-width="2"/>
-    <line x1="10" y1="20" x2="65" y2="20" stroke="#FFFFFF" stroke-width="2"/>
-    <line x1="10" y1="28" x2="55" y2="28" stroke="#FFFFFF" stroke-width="2"/>
-    <line x1="10" y1="36" x2="40" y2="36" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="0" y="0" width="85" height="55" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="4" y="4" width="77" height="47" rx="2" fill="#1E293B"/>
+    
+    <line class="code-line-1" x1="10" y1="12" x2="50" y2="12" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+    <line class="code-line-2" x1="10" y1="20" x2="68" y2="20" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/>
+    <line class="code-line-1" x1="10" y1="28" x2="58" y2="28" stroke="#34D399" stroke-width="2" stroke-linecap="round"/>
+    <line class="code-line-2" x1="10" y1="36" x2="42" y2="36" stroke="#F472B6" stroke-width="2" stroke-linecap="round"/>
+    <rect class="cursor-blink" x="46" y="33" width="5" height="6" fill="#38BDF8"/>
+
     <rect x="36" y="55" width="12" height="12" fill="#475569"/>
     <ellipse cx="42" cy="67" rx="18" ry="4" fill="#334155"/>
   </g>
 
-  <!-- Center Monitor 2 -->
   <g transform="translate(155, 110)">
-    <rect x="0" y="0" width="90" height="55" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2"/>
-    <rect x="4" y="4" width="82" height="47" rx="2" fill="#0284C7"/>
-    <rect x="8" y="8" width="30" height="38" rx="2" fill="#0F172A" fill-opacity="0.5"/>
-    <rect x="42" y="8" width="40" height="38" rx="2" fill="#0F172A" fill-opacity="0.5"/>
+    <rect x="0" y="0" width="90" height="55" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="4" y="4" width="82" height="47" rx="2" fill="#090D16"/>
+    
+    <rect x="8" y="8" width="34" height="38" rx="2" fill="#1E293B"/>
+    <line class="code-line-2" x1="12" y1="14" x2="36" y2="14" stroke="#60A5FA" stroke-width="1.5"/>
+    <line class="code-line-1" x1="12" y1="20" x2="30" y2="20" stroke="#FBBF24" stroke-width="1.5"/>
+    <line class="code-line-2" x1="12" y1="26" x2="38" y2="26" stroke="#34D399" stroke-width="1.5"/>
+
+    <rect x="46" y="8" width="36" height="38" rx="2" fill="#1E293B"/>
+    <line class="code-line-1" x1="50" y1="14" x2="74" y2="14" stroke="#C084FC" stroke-width="1.5"/>
+    <line class="code-line-2" x1="50" y1="20" x2="68" y2="20" stroke="#38BDF8" stroke-width="1.5"/>
+    <line class="code-line-1" x1="50" y1="26" x2="76" y2="26" stroke="#F472B6" stroke-width="1.5"/>
+
     <rect x="38" y="55" width="12" height="12" fill="#475569"/>
     <ellipse cx="44" cy="67" rx="20" ry="4" fill="#334155"/>
   </g>
 
-  <!-- Floating Gear Node Icon -->
   <g transform="translate(290, 80)">
-    <rect x="0" y="0" width="40" height="30" rx="4" fill="#2563EB"/>
-    <circle cx="15" cy="15" r="5" fill="#FFFFFF"/>
-    <circle cx="26" cy="15" r="5" fill="#FFFFFF"/>
+    <rect x="0" y="0" width="40" height="30" rx="6" fill="#2563EB" filter="url(#shadow)"/>
+    <g class="gear-rotate">
+      <path d="M 310 90 L 310 100 M 305 95 L 315 95" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="310" cy="95" r="5" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    </g>
   </g>
 
-  <!-- Developer Person Body -->
   <rect x="310" y="120" width="40" height="60" rx="10" fill="#334155"/>
   <rect x="290" y="170" width="65" height="12" rx="4" fill="#1E293B"/>
   <line x1="330" y1="182" x2="330" y2="245" stroke="#334155" stroke-width="5"/>
