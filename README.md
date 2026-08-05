@@ -5,12 +5,10 @@
 
   <br/><br/>
 
-  <!-- SUBTITLE -->
-  <h1 align="center">
-    <font color="#06B6D4">Full Stack MERN Developer</font>
-  </h1>
+  <!-- ANIMATED TYPING TERMINAL (FULL STACK MERN DEVELOPER, EDITOR, STUDENT) -->
+  <img src="assets/hero.svg" alt="Role Typing Animation" width="100%" />
 
-  <br/>
+  <br/><br/>
 
   <!-- CLICKABLE SOCIAL MEDIA BADGES -->
   <p align="center">
@@ -51,18 +49,19 @@
 <!-- ABOUT ME SECTION -->
 <h2 align="left">📊 About Me</h2>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td width="55%" valign="top">
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
 
 ```javascript
 const mahendra = {
     pronouns: "He/Him",
     location: "India 🇮🇳",
     education: "B.Tech CSE",
+    roles: ["Full Stack MERN Developer", "Editor", "Student"],
     currentFocus: "MERN Stack & AI Projects 🚀",
     learning: ["MERN Stack", "System Design", "DSA"],
-    interests: ["Problem Solving", "Web Development", "AI/ML"],
+    interests: ["Problem Solving", "Web Development", "Video Editing"],
     motto: "Bugs in my head never make me sleep ^_^",
 
     lifeLoop: function() {
@@ -76,12 +75,12 @@ const mahendra = {
 };
 ```
 
-    </td>
-    <td width="45%" valign="center" align="center">
-      <!-- ANIMATED VECTOR ILLUSTRATION -->
-      <img src="assets/coding.svg" alt="Developer Workspace Illustration" width="100%" />
-    </td>
-  </tr>
+</td>
+<td width="45%" valign="center" align="center">
+  <!-- ANIMATED VECTOR ILLUSTRATION -->
+  <img src="assets/coding.svg" alt="Developer Workspace Illustration" width="100%" />
+</td>
+</tr>
 </table>
 
 <br/>
@@ -95,53 +94,43 @@ const mahendra = {
   <h2>&lt;/&gt; Tech Arsenal</h2>
   <br/>
 
-  <table width="100%" border="0" cellspacing="10" cellpadding="10">
-    <tr>
-      <!-- LEFT COLUMN -->
-      <td width="50%" valign="top">
-        <h4 align="left">🎨 Frontend Magic</h4>
-        <p align="left">
-          <img src="https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-          <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-          <img src="https://img.shields.io/badge/TAILWINDCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-          <br/><br/>
-          <img src="https://img.shields.io/badge/BOOTSTRAP-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-        </p>
+  <h3>🎨 Frontend Magic</h3>
+  <p align="center">
+    <img src="https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+    <img src="https://img.shields.io/badge/TAILWINDCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <img src="https://img.shields.io/badge/BOOTSTRAP-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  </p>
 
-        <br/>
+  <br/>
 
-        <h4 align="left">⚙️ Backend Power</h4>
-        <p align="left">
-          <img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-          <img src="https://img.shields.io/badge/EXPRESS-000000?style=for-the-badge&logo=express&logoColor=white" />
-          <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=fastapi&logoColor=white" />
-        </p>
-      </td>
+  <h3>⚙️ Backend Power</h3>
+  <p align="center">
+    <img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/EXPRESS-000000?style=for-the-badge&logo=express&logoColor=white" />
+    <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=fastapi&logoColor=white" />
+  </p>
 
-      <!-- RIGHT COLUMN -->
-      <td width="50%" valign="top">
-        <h4 align="left">🗄️ Database</h4>
-        <p align="left">
-          <img src="https://img.shields.io/badge/MYSQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
-          <img src="https://img.shields.io/badge/MONGODB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-        </p>
+  <br/>
 
-        <br/>
+  <h3>🗄️ Database</h3>
+  <p align="center">
+    <img src="https://img.shields.io/badge/MYSQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
+    <img src="https://img.shields.io/badge/MONGODB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  </p>
 
-        <h4 align="left">💻 Languages &amp; Tools</h4>
-        <p align="left">
-          <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
-          <img src="https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-          <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-          <br/><br/>
-          <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
-          <img src="https://img.shields.io/badge/VS_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-        </p>
-      </td>
-    </tr>
-  </table>
+  <br/>
+
+  <h3>💻 Languages &amp; Tools</h3>
+  <p align="center">
+    <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
+    <img src="https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
+    <img src="https://img.shields.io/badge/VS_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  </p>
 
   <br/><br/>
 
