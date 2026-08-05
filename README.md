@@ -12,7 +12,7 @@
 
   <!-- VISITOR COUNTER & STATUS BADGES -->
   <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=mahendra-naidu-meesala&label=PROFILE+VIEWS&color=2563EB&style=for-the-badge&logo=github" alt="Visitor Count" />
+    <img src="https://komarev.com/ghpvc/?username=MAHENDRA-NAIDU&label=PROFILE+VIEWS&color=2563EB&style=for-the-badge&logo=github" alt="Visitor Count" />
     <img src="https://img.shields.io/badge/STATUS-BUILDING_AI_APPS-7C3AED?style=for-the-badge&logo=rocket" alt="Status Badge" />
     <img src="https://img.shields.io/badge/LOCATION-INDIA-06B6D4?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location Badge" />
   </p>
@@ -24,7 +24,7 @@
     <a href="https://linkedin.com" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
-    <a href="https://github.com" target="_blank">
+    <a href="https://github.com/MAHENDRA-NAIDU" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
     <a href="mailto:mahendra.meesala@example.com" target="_blank">
@@ -155,7 +155,7 @@ const mahendra = {
   <table width="100%">
     <tr>
       <td width="50%" valign="top">
-        <a href="https://github.com/mahendra-naidu-meesala/ai-farmer-assistant">
+        <a href="https://github.com/MAHENDRA-NAIDU/ai-farmer-assistant">
           <h3 align="left">🌾 AI Farmer Assistant</h3>
         </a>
         <p align="left">Smart agriculture platform built with MERN stack & AI models for soil analysis, crop yield prediction, and plant disease diagnosis.</p>
@@ -167,7 +167,7 @@ const mahendra = {
         </p>
       </td>
       <td width="50%" valign="top">
-        <a href="https://github.com/mahendra-naidu-meesala/animated-portfolio">
+        <a href="https://github.com/MAHENDRA-NAIDU/animated-portfolio">
           <h3 align="left">✨ Modern 3D Portfolio Website</h3>
         </a>
         <p align="left">High-performance responsive personal portfolio website with smooth glassmorphism, interactive SVGs, and dark theme UI.</p>
@@ -180,7 +180,7 @@ const mahendra = {
     </tr>
     <tr>
       <td width="50%" valign="top">
-        <a href="https://github.com/mahendra-naidu-meesala/mern-ecommerce-saas">
+        <a href="https://github.com/MAHENDRA-NAIDU/mern-ecommerce-saas">
           <h3 align="left">🛒 MERN E-Commerce SaaS Application</h3>
         </a>
         <p align="left">Full-stack e-commerce engine complete with JWT authentication, Stripe payment processing, admin analytics dashboard, and real-time inventory management.</p>
@@ -191,7 +191,7 @@ const mahendra = {
         </p>
       </td>
       <td width="50%" valign="top">
-        <a href="https://github.com/mahendra-naidu-meesala/dsa-problem-solving">
+        <a href="https://github.com/MAHENDRA-NAIDU/dsa-problem-solving">
           <h3 align="left">🧠 DSA & Algorithm Solutions Repository</h3>
         </a>
         <p align="left">Comprehensive collection of optimized Data Structures and Algorithms solutions solved across LeetCode & GeeksforGeeks in C++, Java, and JavaScript.</p>
@@ -204,7 +204,7 @@ const mahendra = {
     </tr>
     <tr>
       <td colspan="2" width="100%" valign="top">
-        <a href="https://github.com/mahendra-naidu-meesala/ai-agent-copilot">
+        <a href="https://github.com/MAHENDRA-NAIDU/ai-agent-copilot">
           <h3 align="center">🤖 Future Autonomous AI Agent System</h3>
         </a>
         <p align="center">Next-generation LLM-powered AI agent assistant designed for developer workflow automation, real-time code synthesis, and multi-agent coordination.</p>
@@ -224,7 +224,7 @@ const mahendra = {
   <!-- 9. TROPHY SECTION -->
   <h2>🏆 GitHub Trophies</h2>
   <br/>
-  <img src="https://github-profile-trophy.vercel.app/?username=mahendra-naidu-meesala&theme=darkhub&no-frame=true&no-background=true&margin-w=15&row=1" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=MAHENDRA-NAIDU&theme=darkhub&no-frame=true&no-background=true&margin-w=15&row=1" alt="GitHub Trophies" />
 
   <br/><br/>
   <img src="assets/divider.svg" alt="Section Divider" width="100%" />
@@ -235,13 +235,13 @@ const mahendra = {
   <br/>
 
   <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=mahendra-naidu-meesala&show_icons=true&theme=dark&bg_color=0D1117&title_color=2563EB&icon_color=06B6D4&text_color=E2E8F0&border_color=2563EB&hide_border=false" alt="Mahendra Naidu GitHub Stats" height="170" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahendra-naidu-meesala&layout=compact&theme=dark&bg_color=0D1117&title_color=7C3AED&text_color=E2E8F0&border_color=7C3AED&hide_border=false" alt="Top Languages" height="170" />
+    <img src="https://github-readme-stats.vercel.app/api?username=MAHENDRA-NAIDU&show_icons=true&theme=dark&bg_color=0D1117&title_color=2563EB&icon_color=06B6D4&text_color=E2E8F0&border_color=2563EB&hide_border=false" alt="Mahendra Naidu GitHub Stats" height="170" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MAHENDRA-NAIDU&layout=compact&theme=dark&bg_color=0D1117&title_color=7C3AED&text_color=E2E8F0&border_color=7C3AED&hide_border=false" alt="Top Languages" height="170" />
   </p>
 
   <!-- STREAK STATS -->
   <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahendra-naidu-meesala&theme=dark&background=0D1117&border=06B6D4&stroke=06B6D4&ring=2563EB&fire=7C3AED&currStreakLabel=2563EB" alt="GitHub Streak Stats" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=MAHENDRA-NAIDU&theme=dark&background=0D1117&border=06B6D4&stroke=06B6D4&ring=2563EB&fire=7C3AED&currStreakLabel=2563EB" alt="GitHub Streak Stats" />
   </p>
 
   <br/>
@@ -249,7 +249,7 @@ const mahendra = {
   <!-- 10. ACTIVITY GRAPH -->
   <h2>📈 Activity Graph</h2>
   <br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahendra-naidu-meesala&theme=react-dark&bg_color=0B0F19&color=2563EB&line=06B6D4&point=7C3AED&area=true&hide_border=true" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MAHENDRA-NAIDU&theme=react-dark&bg_color=0B0F19&color=2563EB&line=06B6D4&point=7C3AED&area=true&hide_border=true" alt="Activity Graph" width="100%" />
 
   <br/><br/>
 
@@ -257,9 +257,9 @@ const mahendra = {
   <h2>🐍 Contribution Snake Graph</h2>
   <br/>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mahendra-naidu-meesala/mahendra-naidu-meesala/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mahendra-naidu-meesala/mahendra-naidu-meesala/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/mahendra-naidu-meesala/mahendra-naidu-meesala/output/github-contribution-grid-snake-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MAHENDRA-NAIDU/MAHENDRA-NAIDU/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MAHENDRA-NAIDU/MAHENDRA-NAIDU/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/MAHENDRA-NAIDU/MAHENDRA-NAIDU/output/github-contribution-grid-snake-dark.svg" width="100%" />
   </picture>
 
   <br/><br/>
@@ -269,7 +269,7 @@ const mahendra = {
   <!-- 11. QUOTE SECTION -->
   <h2>💭 Daily Dev Quote</h2>
   <br/>
-  <a href="https://github.com/mahendra-naidu-meesala">
+  <a href="https://github.com/MAHENDRA-NAIDU">
     <img src="https://readme-quotes-three.vercel.app/api?theme=dark&bg_color=0D1117&title_color=2563EB&text_color=E2E8F0&border_color=7C3AED" alt="Programming Quote" />
   </a>
 
