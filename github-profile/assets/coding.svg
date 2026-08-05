@@ -1,147 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
-  <defs>
-    <radialGradient id="deskGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3"/>
-      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="screenGlow" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="neonLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2563EB"/>
-      <stop offset="50%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <!-- Background Shadow -->
+  <ellipse cx="250" cy="270" rx="200" ry="12" fill="#E2E8F0" fill-opacity="0.6"/>
 
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <style>
-      @keyframes floatSlow {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-12px); }
-      }
-      @keyframes floatFast {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-8px) rotate(5deg); }
-      }
-      @keyframes pulseSteam {
-        0% { transform: translateY(0px) scaleX(1); opacity: 0.8; }
-        50% { transform: translateY(-10px) scaleX(1.3); opacity: 0.3; }
-        100% { transform: translateY(-20px) scaleX(1.6); opacity: 0; }
-      }
-
-      .icon-float1 { animation: floatSlow 5s ease-in-out infinite; }
-      .icon-float2 { animation: floatFast 4s ease-in-out infinite 1s; }
-      .icon-float3 { animation: floatSlow 6s ease-in-out infinite 2s; }
-      .steam { animation: pulseSteam 3s ease-out infinite; }
-    </style>
-  </defs>
-
-  <!-- Canvas Background -->
-  <rect width="800" height="420" rx="16" fill="#0B0F19"/>
-
-  <!-- Ambient Light Orbs -->
-  <circle cx="400" cy="200" r="280" fill="url(#deskGlow)"/>
-  <circle cx="400" cy="160" r="200" fill="url(#screenGlow)"/>
-
-  <!-- Grid backdrop overlay -->
-  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
-    <line x1="0" y1="340" x2="800" y2="340"/>
-    <line x1="100" y1="0" x2="100" y2="420"/>
-    <line x1="700" y1="0" x2="700" y2="420"/>
+  <!-- Waste Bin (Right) -->
+  <g transform="translate(420, 220)">
+    <rect x="0" y="0" width="28" height="36" rx="4" fill="#3B82F6" fill-opacity="0.8" stroke="#1D4ED8" stroke-width="1.5"/>
+    <line x1="6" y1="0" x2="6" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
+    <line x1="14" y1="0" x2="14" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
+    <line x1="22" y1="0" x2="22" y2="36" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
   </g>
 
-  <!-- Workspace Desk Surface -->
-  <path d="M 50 340 L 750 340 L 780 400 L 20 400 Z" fill="#1E293B" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
-  <line x1="50" y1="340" x2="750" y2="340" stroke="url(#neonLine)" stroke-width="2" filter="url(#glow)"/>
+  <!-- Desk Structure -->
+  <line x1="30" y1="170" x2="380" y2="170" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <line x1="50" y1="170" x2="50" y2="270" stroke="#64748B" stroke-width="3"/>
+  <line x1="200" y1="170" x2="200" y2="270" stroke="#64748B" stroke-width="3"/>
+  <line x1="360" y1="170" x2="360" y2="270" stroke="#64748B" stroke-width="3"/>
 
-  <!-- Main Dual Screen Setup -->
-  <!-- Main Monitor Stand -->
-  <rect x="375" y="280" width="50" height="60" fill="#334155" rx="4"/>
-  <ellipse cx="400" cy="340" rx="60" ry="10" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-
-  <!-- Main Monitor Outer Frame -->
-  <rect x="180" y="60" width="440" height="240" rx="12" fill="#0F172A" stroke="#334155" stroke-width="3"/>
-  <!-- Screen Inner Display -->
-  <rect x="190" y="70" width="420" height="220" rx="8" fill="#090D16"/>
-
-  <!-- IDE Header -->
-  <rect x="190" y="70" width="420" height="25" fill="#1E293B" rx="8"/>
-  <circle cx="205" cy="82.5" r="4" fill="#EF4444"/>
-  <circle cx="220" cy="82.5" r="4" fill="#F59E0B"/>
-  <circle cx="235" cy="82.5" r="4" fill="#10B981"/>
-  <text x="255" y="86" fill="#94A3B8" font-family="monospace" font-size="10">App.jsx - MERN Project</text>
-
-  <!-- IDE Sidebar -->
-  <rect x="190" y="95" width="40" height="195" fill="#0F172A"/>
-  <circle cx="210" cy="115" r="6" fill="#2563EB"/>
-  <circle cx="210" cy="135" r="6" fill="#7C3AED"/>
-  <circle cx="210" cy="155" r="6" fill="#06B6D4"/>
-
-  <!-- Code Display Area -->
-  <g transform="translate(245, 110)">
-    <text x="0" y="15" fill="#E2E8F0" font-family="monospace" font-size="11"><tspan fill="#F472B6">import</tspan> React, { useState } from <tspan fill="#34D399">'react'</tspan>;</text>
-    <text x="0" y="32" fill="#E2E8F0" font-family="monospace" font-size="11"><tspan fill="#F472B6">import</tspan> { expressApp } <tspan fill="#F472B6">from</tspan> <tspan fill="#34D399">'./backend'</tspan>;</text>
-    
-    <text x="0" y="58" fill="#E2E8F0" font-family="monospace" font-size="11"><tspan fill="#60A5FA">const</tspan> <tspan fill="#FBBF24">MahendraDev</tspan> = () =&gt; {</text>
-    <text x="15" y="75" fill="#E2E8F0" font-family="monospace" font-size="11"><tspan fill="#60A5FA">const</tspan> [skills, setSkills] = <tspan fill="#38BDF8">useState</tspan>([</text>
-    <text x="30" y="92" fill="#34D399" font-family="monospace" font-size="11">'React', 'Node.js', 'MongoDB', 'Express', 'AI'</text>
-    <text x="15" y="109" fill="#E2E8F0" font-family="monospace" font-size="11">]);</text>
-    <text x="15" y="132" fill="#818CF8" font-family="monospace" font-size="11">return &lt;<tspan fill="#38BDF8">SoftwareEngineerGoal</tspan> status=<tspan fill="#34D399">"Ready"</tspan> /&gt;;</text>
-    <text x="0" y="150" fill="#E2E8F0" font-family="monospace" font-size="11">};</text>
-    <text x="0" y="168" fill="#F472B6" font-family="monospace" font-size="11">export default <tspan fill="#FBBF24">MahendraDev</tspan>;</text>
+  <!-- Left Monitor 1 -->
+  <g transform="translate(60, 110)">
+    <rect x="0" y="0" width="85" height="55" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <rect x="4" y="4" width="77" height="47" rx="2" fill="#38BDF8" fill-opacity="0.9"/>
+    <line x1="10" y1="12" x2="45" y2="12" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="10" y1="20" x2="65" y2="20" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="10" y1="28" x2="55" y2="28" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="10" y1="36" x2="40" y2="36" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="36" y="55" width="12" height="12" fill="#475569"/>
+    <ellipse cx="42" cy="67" rx="18" ry="4" fill="#334155"/>
   </g>
 
-  <!-- Keyboard on Desk -->
-  <g transform="translate(310, 355)">
-    <rect x="0" y="0" width="180" height="24" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <rect x="10" y="4" width="160" height="16" rx="2" fill="#1E293B" stroke="url(#neonLine)" stroke-width="0.8" stroke-opacity="0.8"/>
+  <!-- Center Monitor 2 -->
+  <g transform="translate(155, 110)">
+    <rect x="0" y="0" width="90" height="55" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <rect x="4" y="4" width="82" height="47" rx="2" fill="#0284C7"/>
+    <rect x="8" y="8" width="30" height="38" rx="2" fill="#0F172A" fill-opacity="0.5"/>
+    <rect x="42" y="8" width="40" height="38" rx="2" fill="#0F172A" fill-opacity="0.5"/>
+    <rect x="38" y="55" width="12" height="12" fill="#475569"/>
+    <ellipse cx="44" cy="67" rx="20" ry="4" fill="#334155"/>
   </g>
 
-  <!-- Mouse on Desk -->
-  <g transform="translate(520, 360)">
-    <ellipse cx="12" cy="12" rx="10" ry="14" fill="#0F172A" stroke="#38BDF8" stroke-width="1"/>
-    <line x1="12" y1="4" x2="12" y2="12" stroke="#38BDF8" stroke-width="1"/>
+  <!-- Floating Gear Node Icon -->
+  <g transform="translate(290, 80)">
+    <rect x="0" y="0" width="40" height="30" rx="4" fill="#2563EB"/>
+    <circle cx="15" cy="15" r="5" fill="#FFFFFF"/>
+    <circle cx="26" cy="15" r="5" fill="#FFFFFF"/>
   </g>
 
-  <!-- Coffee Mug with Steam -->
-  <g transform="translate(230, 340)">
-    <rect x="0" y="0" width="22" height="28" rx="4" fill="#1E293B" stroke="#A78BFA" stroke-width="1"/>
-    <path d="M 22 6 C 28 6 28 20 22 20" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
-    <path class="steam" d="M 6 -5 Q 11 -12 6 -18" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
-    <path class="steam" style="animation-delay: 1.5s;" d="M 14 -5 Q 19 -12 14 -18" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
-  </g>
+  <!-- Developer Person Body -->
+  <rect x="310" y="120" width="40" height="60" rx="10" fill="#334155"/>
+  <rect x="290" y="170" width="65" height="12" rx="4" fill="#1E293B"/>
+  <line x1="330" y1="182" x2="330" y2="245" stroke="#334155" stroke-width="5"/>
+  <line x1="300" y1="245" x2="360" y2="245" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="300" cy="250" r="3" fill="#0F172A"/>
+  <circle cx="360" cy="250" r="3" fill="#0F172A"/>
 
-  <!-- FLOATING TECH ICONS -->
-  <g class="icon-float1" transform="translate(90, 80)">
-    <circle cx="25" cy="25" r="24" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" filter="url(#glow)"/>
-    <ellipse cx="25" cy="25" rx="16" ry="6" fill="none" stroke="#38BDF8" stroke-width="1.5"/>
-    <ellipse cx="25" cy="25" rx="16" ry="6" fill="none" stroke="#38BDF8" stroke-width="1.5" transform="rotate(60 25 25)"/>
-    <ellipse cx="25" cy="25" rx="16" ry="6" fill="none" stroke="#38BDF8" stroke-width="1.5" transform="rotate(120 25 25)"/>
-    <circle cx="25" cy="25" r="3" fill="#38BDF8"/>
-  </g>
+  <circle cx="280" cy="115" r="16" fill="#FDBA74"/>
+  <path d="M 264 112 C 264 96 295 96 295 112 Z" fill="#1E293B"/>
+  <circle cx="274" cy="114" r="4" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+  <circle cx="284" cy="114" r="4" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="278" y1="114" x2="280" y2="114" stroke="#1E293B" stroke-width="1.5"/>
 
-  <g class="icon-float2" transform="translate(660, 90)">
-    <circle cx="25" cy="25" r="24" fill="#0F172A" stroke="#10B981" stroke-width="1.5" filter="url(#glow)"/>
-    <polygon points="25,11 37,18 37,32 25,39 13,32 13,18" fill="none" stroke="#10B981" stroke-width="1.5"/>
-    <text x="25" y="29" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">JS</text>
-  </g>
+  <path d="M 265 130 Q 280 128 295 130 L 300 180 L 260 180 Z" fill="#2563EB"/>
+  
+  <path d="M 270 135 L 245 160 L 230 160" fill="none" stroke="#FDBA74" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 290 135 L 255 162 L 235 162" fill="none" stroke="#2563EB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <g class="icon-float3" transform="translate(80, 220)">
-    <circle cx="25" cy="25" r="24" fill="#0F172A" stroke="#34D399" stroke-width="1.5" filter="url(#glow)"/>
-    <path d="M 25 10 C 18 20 18 30 25 40 C 32 30 32 20 25 10 Z" fill="#34D399" fill-opacity="0.8"/>
-  </g>
-
-  <g class="icon-float1" transform="translate(670, 230)">
-    <circle cx="25" cy="25" r="24" fill="#0F172A" stroke="#A78BFA" stroke-width="1.5" filter="url(#glow)"/>
-    <path d="M 25 12 L 28 21 L 37 25 L 28 29 L 25 38 L 22 29 L 13 25 L 22 21 Z" fill="#A78BFA"/>
-  </g>
+  <path d="M 270 180 L 260 215 L 275 255" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="268" y="250" width="22" height="10" rx="3" fill="#0F172A"/>
 </svg>
